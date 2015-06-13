@@ -9,7 +9,9 @@
     <meta name="description" content="Tel-A-Friend Motel Website">
     <meta name="author" content="Sean Anthony Russell">
 	<title> Tel-A-Friend Motel</title>
-	
+
+
+
 	<!-- Google ABeeZee Fonts -->
 	<link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
 	
@@ -22,8 +24,10 @@
 	<!-- Google Maps Script Start -->
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
+	var google = google || {};
+
 	function initialize() {
-	  var myLatlng = new google.maps.LatLng(50.2528427,-119.2737897);
+	  new google.maps.LatLng(50.2528427,-119.2737897);
 	  var mapOptions = {
 		zoom: 15,
 		center: myLatlng
@@ -44,11 +48,12 @@
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+	<!--[if lt IE 9]>
+		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
-	
+
+
 	
 <meta name="viewport" content="width=device-width" />
 
@@ -119,7 +124,7 @@
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center img-main" src="img/bubblePic1.jpg" alt="" id="bubbles">
+                <img class="img-circle img-responsive img-center img-main bubbles" src="img/bubblePic1.jpg" alt="">
 				<div class="sidebar">
 				
 				<div id="reservation">
@@ -131,8 +136,8 @@
 					</form>
 				</div>
 					
-				<div id="contactHeaderContainer">
-					<p id="contactHeader">Check Availability</p>
+				<div class="contactHeaderContainer">
+					<p class="contactHeader">Check Availability</p>
 				</div>
 				
 				<ins class="bookingaff" data-aid="832391" data-target_aid="829176" data-prod="nsb" data-width="300" data-height="250">
@@ -150,20 +155,20 @@
 </script>
 
 				
-				<div id="contactHeaderContainer">
-					<p id="contactHeader">Contact Us</p>
+				<div class="contactHeaderContainer">
+					<p class="contactHeader">Contact Us</p>
 				</div>
-				<form type="submit" id="form" class="bg-success">
+				<form id="form" class="bg-success">
 				
 					<div id="formContainer">
-						First Name<br><input type="textbox" id="fname" placeholder=" Jane/John" /><br>
-						Last Name<br><input type="textbox" id="lname" placeholder=" Doe" /><br>
-						E-mail<br><input type="textbox" id="email" placeholder=" email@email.com" /><br>
-						Phone Number<br><input type="textbox" id="phone" placeholder=" 1-(555)-555-5555" /><br><br>
+						First Name<br><input type="text" id="fname" placeholder=" Jane/John" /><br>
+						Last Name<br><input type="text" id="lname" placeholder=" Doe" /><br>
+						E-mail<br><input type="text" id="email" placeholder=" email@email.com" /><br>
+						Phone Number<br><input type="text" id="phone" placeholder=" 1-(555)-555-5555" /><br><br>
 						
-						Comments?<br><input type="textarea" id="comments" placeholder=" I love your motel!" />
+						Comments?<br><textarea id="comments" placeholder=" I love your motel!"></textarea>
 						
-						<input type="button" type="submit" value="Submit" id="submitButton" />
+						<input type="button" value="Submit" id="submitButton" />
 					</div>
 					
 					<div id="contactInfo">
@@ -193,7 +198,7 @@
 								myimages[2]="img/reviews/review2.jpg";
 								myimages[3]="img/reviews/review3.jpg";
 
-								var random=Math.floor(Math.random()*myimages.length)
+								var random=Math.floor(Math.random()*myimages.length);
 								if (random == 0)
 								{
 									random = 1;
@@ -210,7 +215,7 @@
 				</div>
             </div>
             <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center bubblePicRemove" src="img/bubblePic2.jpg" alt="" id="bubbles">
+                <img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic2.jpg" alt="">
 				<div id="bubbleText">
                 <h2 id="bubbleH2">Tel-A-Friend, Country Motel</h2>
                 <p>Located within walking distance of downtown Vernon shops and parks, the Tel-A-Friend Country Motel brings you 50's charm and reasonable rates. 
@@ -250,7 +255,7 @@
 				
             </div>
 			<div class="col-sm-4">
-                <img class="img-circle img-responsive img-center bubblePicRemove" src="img/bubblePic3.jpg" alt="" id="bubbles">
+                <img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic3.jpg" alt="">
 				
 				
             </div>

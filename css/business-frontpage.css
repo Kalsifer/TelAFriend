@@ -41,7 +41,7 @@ padding-top: 50px;/* Required padding for .navbar-fixed-top. Remove if using .na
 	margin-top: -200px;
 }
 
-.row #bubbles
+.row .bubbles
 {
 	
 	/*border: 1px solid rgba(0,0,0,0.7);*/
@@ -165,7 +165,7 @@ p
 	margin-top: 40px;
 }
 
-#reviewHeader, #contactHeader
+.reviewHeader, .contactHeader
 {
 	padding: 10px;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
@@ -174,14 +174,14 @@ p
 	text-align: center;
 }
 
-#reviewHeaderContainer
+.reviewHeaderContainer
 {
 	margin-top: 20px;
 	width: 100%;
 	margin-bottom: -41px;
 }
 
-#contactHeaderContainer
+.contactHeaderContainer
 {
 	margin-top: 20px;
 	margin-bottom: -21px;
