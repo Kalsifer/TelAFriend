@@ -131,16 +131,13 @@
 					<form action="http://www.booking.com/hotel/ca/tel-a-friend-motel.html?aid=829176">
 					<!--	<input type="submit" value="Make a reservation today"> -->
 						<button type="submit" class="btn btn-info btn-lg">Make a reservation today!</button>
-						<!--id="reservationButton"-->
-
-
 					</form>
 				</div>
 				
 				<div class="contactHeaderContainer">
 					<p class="contactHeader">Contact Us</p>
 				</div>
-				<form id="form" class="bg-success">
+				<form id="contact" class="bg-success">
 				
 					<div id="formContainer">
 						First Name<br><input type="text" id="fname" placeholder=" Jane/John" /><br>
@@ -148,22 +145,29 @@
 						E-mail<br><input type="text" id="email" placeholder=" email@email.com" /><br>
 						Phone Number<br><input type="text" id="phone" placeholder=" 1-(555)-555-5555" /><br><br>
 						
-						Comments?<br><textarea id="comments" placeholder=" I love your motel!"></textarea>
+						Comments?<br><textarea id="comments" placeholder=" I've got a question!"></textarea>
 						
 						<input type="button" value="Submit" id="submitButton" />
-					</div>
+						</div>
+				</form>
+
 					
 					<div id="contactInfo">
-					Need information? Feel free to contact us any time during our business hours.<br><br>
-				
-					1-(250)-558-1129<br>
-					1501 32 St<br>
+						<h2>Contact Info</h2>
+					<p>Need information? Feel free to contact us any time during our business hours.</p>
+					<address>
+					<strong>Phone:</strong> 1-(250)-558-1129<br>
+					<strong>Address:</strong> 1501 32 St<br>
 					Vernon, BC<br>
 					V1T 5K4<br><br>
+					</address>
+						We look forward to hearing from you!
+						</div>
 					
-					We look forward to hearing from you!
-				</div>
-				</form>
+
+
+
+
 				
 				
 				<div id="reviewHeaderContainer">
@@ -174,7 +178,7 @@
 						<script>
 							function randomImage()
 							{
-								var myimages=new Array()
+								var myimages=[];
 								
 								myimages[1]="img/reviews/review1.jpg";
 								myimages[2]="img/reviews/review2.jpg";
