@@ -24,24 +24,25 @@
 	<!-- Google Maps Script Start -->
 	<script src="http://maps.googleapis.com/maps/api/js"></script>
 	<script>
-	var google = google || {};
+		function initialize() {
+			var mapOptions = {
+				zoom: 15,
+				center: new google.maps.LatLng(50.2528427, -119.2737897)
+			};
+			var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
-	function initialize() {
-	  new google.maps.LatLng(50.2528427,-119.2737897);
-	  var mapOptions = {
-		zoom: 15,
-		center: myLatlng
-	  };
-	  var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+			new google.maps.Marker({
+				position: new google.maps.LatLng(50.2528427, -119.2737897),
+				map: map,
+				title: 'Tel-A-Friend Motel'
+			});
+		}
 
-	  new google.maps.Marker({
-		  position: myLatlng,
-		  map: map,
-		  title: 'Tel-A-Friend Motel'
-	  });
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
+		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
+
+
+
 	<!-- Google Maps Script End -->
 
 	
@@ -173,17 +174,12 @@
 						<script>
 							function randomImage()
 							{
-								var myimages=new Array()
-								
-								myimages[1]="img/reviews/review1.jpg";
-								myimages[2]="img/reviews/review2.jpg";
-								myimages[3]="img/reviews/review3.jpg";
+								var myimages = ["img/reviews/review1.jpg",
+												"img/reviews/review2.jpg",
+												"img/reviews/review3.jpg"];
 
 								var random=Math.floor(Math.random()*myimages.length);
-								if (random == 0)
-								{
-									random = 1;
-								}
+								if (random == 0) {random = 1;}
 								document.write('<img src="'+myimages[random]+'">');
 							}
 							randomImage();
