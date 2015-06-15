@@ -8,261 +8,265 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Tel-A-Friend Motel Website">
     <meta name="author" content="Sean Anthony Russell">
-	<title> Tel-A-Friend Motel</title>
+    <title> Tel-A-Friend Motel</title>
 
 
+    <!-- Google ABeeZee Fonts -->
+    <link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
 
-	<!-- Google ABeeZee Fonts -->
-	<link href='http://fonts.googleapis.com/css?family=ABeeZee' rel='stylesheet' type='text/css'>
-	
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
-	
-	<!-- Google Maps Script Start -->
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
-	<script>
-	var google = google || {};
 
-	function initialize() {
-	  new google.maps.LatLng(50.2528427,-119.2737897);
-	  var mapOptions = {
-		zoom: 15,
-		center: myLatlng
-	  };
-	  var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+    <!-- Google Maps Script Start -->
+    <script src="http://maps.googleapis.com/maps/api/js"></script>
+    <script>
+        var google = google || {};
 
-	  new google.maps.Marker({
-		  position: myLatlng,
-		  map: map,
-		  title: 'Tel-A-Friend Motel'
-	  });
-	}
-	google.maps.event.addDomListener(window, 'load', initialize);
-	</script>
-	<!-- Google Maps Script End -->
+        function initialize() {
+            new google.maps.LatLng(50.2528427, -119.2737897);
+            var mapOptions = {
+                zoom: 15,
+                center: myLatlng
+            };
+            var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
-	
+            new google.maps.Marker({
+                position: myLatlng,
+                map: map,
+                title: 'Tel-A-Friend Motel'
+            });
+        }
+        google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+    <!-- Google Maps Script End -->
+
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
 
-	
-<meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width"/>
 
-<style>
-@media (max-width: 770px) {
-  .bubblePicRemove {
-    display: none;
-  }
-  
-  #bubbleText, #googleMap
-  {
-	width: 100%;
-  }
-  .img-main{
-	content:url("img/bubblePic4.jpg");
-  }  
-}
-</style>
+    <style>
+        @media (max-width: 770px) {
+            .bubblePicRemove {
+                display: none;
+            }
+
+            #bubbleText, #googleMap {
+                width: 100%;
+            }
+
+            .img-main {
+                content: url("img/bubblePic4.jpg");
+            }
+        }
+    </style>
 </head>
 
 <body>
-    <!-- Navigation Start -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">Tel-A-Friend Motel</a>
-            </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav">
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="rooms_and_rates.html">Rooms & Rates</a>
-                    </li>
-                    <li>
-                        <a href="#">Local Attractions</a>
-                    </li>
-					<li>
-                        <a href="#">Feedback & About</a>
-                    </li>
-                </ul>
+<!-- Navigation Start -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html">Tel-A-Friend Motel</a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="rooms_and_rates.html">Rooms & Rates</a>
+                </li>
+                <li>
+                    <a href="#">Local Attractions</a>
+                </li>
+                <li>
+                    <a href="#">Feedback & About</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Navigation End -->
+
+
+<!-- Image Background Page Header -->
+<!-- Note: The background image is set within the business-casual.css file. -->
+<header class="business-header">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="tagline">Tel-A-Friend Motel</h1>
             </div>
         </div>
-    </nav>
-	<!-- Navigation End -->
-	
+    </div>
+</header>
 
-    <!-- Image Background Page Header -->
-    <!-- Note: The background image is set within the business-casual.css file. -->
-    <header class="business-header">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="tagline">Tel-A-Friend Motel</h1>
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4">
+            <a href="attractions.html"><img class="img-circle img-responsive img-center img-main bubbles" src="img/bubblePic1.jpg" alt="attractions"></a>
+
+            <div class="sidebar">
+
+                <div id="reservation">
+                    <form action="http://www.booking.com/hotel/ca/tel-a-friend-motel.html?aid=829176">
+                        <!--	<input type="submit" value="Make a reservation today"> -->
+                        <button type="submit" class="btn btn-info btn-lg">Make a reservation today!</button>
+                    </form>
+                </div>
+
+                <div class="contactHeaderContainer">
+                    <p class="contactHeader">Contact Us</p>
+                </div>
+                <form id="contact" class="bg-success">
+
+                    <div id="formContainer">
+                        First Name<br><input type="text" id="fname" placeholder=" Jane/John"/><br>
+                        Last Name<br><input type="text" id="lname" placeholder=" Doe"/><br>
+                        E-mail<br><input type="text" id="email" placeholder=" email@email.com"/><br>
+                        Phone Number<br><input type="text" id="phone" placeholder=" 1-(555)-555-5555"/><br><br>
+
+                        Comments?<br><textarea id="comments" placeholder=" I've got a question!"></textarea>
+
+                        <input type="button" value="Submit" id="submitButton"/>
+                    </div>
+                </form>
+
+
+                <div id="contactInfo">
+                    <h2>Contact Info</h2>
+
+                    <p>Need information? Feel free to contact us any time during our business hours.</p>
+                    <address>
+                        <strong>Phone:</strong> 1-(250)-558-1129<br>
+                        <strong>Address:</strong> 1501 32 St<br>
+                        Vernon, BC<br>
+                        V1T 5K4<br><br>
+                    </address>
+                    We look forward to hearing from you!
+                </div>
+
+
+                <div id="reviewHeaderContainer">
+                    <p id="reviewHeader">Customer Reviews</p>
+                </div>
+                <div id="reviewPicsGroup">
+                    <div id="reviewPicContainer">
+                        <script>
+                            function randomImage() {
+                                var myimages = [];
+
+                                myimages[1] = "img/reviews/review1.jpg";
+                                myimages[2] = "img/reviews/review2.jpg";
+                                myimages[3] = "img/reviews/review3.jpg";
+
+                                var random = Math.floor(Math.random() * myimages.length);
+                                if (random == 0) {
+                                    random = 1;
+                                }
+                                document.write('<img src="' + myimages[random] + '">');
+                            }
+                            randomImage();
+                        </script>
+                        <!--<img src="img/reviews/review2.jpg" id="reviewPics"/>
+                        <img src="img/reviews/review3.jpg" id="reviewPics"/>
+                        <img src="img/reviews/review1.jpg" id="reviewPics"/>-->
+                    </div>
                 </div>
             </div>
         </div>
-    </header>
+        <div class="col-sm-4">
+            <a href="about.html"><img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic2.jpg" alt="About Us"></a>
 
-    <!-- Page Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center img-main bubbles" src="img/bubblePic1.jpg" alt="">
-				<div class="sidebar">
-
-				<div id="reservation">
-					<form action="http://www.booking.com/hotel/ca/tel-a-friend-motel.html?aid=829176">
-					<!--	<input type="submit" value="Make a reservation today"> -->
-						<button type="submit" class="btn btn-info btn-lg">Make a reservation today!</button>
-					</form>
-				</div>
-				
-				<div class="contactHeaderContainer">
-					<p class="contactHeader">Contact Us</p>
-				</div>
-				<form id="contact" class="bg-success">
-				
-					<div id="formContainer">
-						First Name<br><input type="text" id="fname" placeholder=" Jane/John" /><br>
-						Last Name<br><input type="text" id="lname" placeholder=" Doe" /><br>
-						E-mail<br><input type="text" id="email" placeholder=" email@email.com" /><br>
-						Phone Number<br><input type="text" id="phone" placeholder=" 1-(555)-555-5555" /><br><br>
-						
-						Comments?<br><textarea id="comments" placeholder=" I've got a question!"></textarea>
-						
-						<input type="button" value="Submit" id="submitButton" />
-						</div>
-				</form>
-
-					
-					<div id="contactInfo">
-						<h2>Contact Info</h2>
-					<p>Need information? Feel free to contact us any time during our business hours.</p>
-					<address>
-					<strong>Phone:</strong> 1-(250)-558-1129<br>
-					<strong>Address:</strong> 1501 32 St<br>
-					Vernon, BC<br>
-					V1T 5K4<br><br>
-					</address>
-						We look forward to hearing from you!
-						</div>
-					
-
-
-
-
-				
-				
-				<div id="reviewHeaderContainer">
-					<p id="reviewHeader">Customer Reviews</p>
-				</div>
-					<div id="reviewPicsGroup">
-						<div id="reviewPicContainer">
-						<script>
-							function randomImage()
-							{
-								var myimages=[];
-								
-								myimages[1]="img/reviews/review1.jpg";
-								myimages[2]="img/reviews/review2.jpg";
-								myimages[3]="img/reviews/review3.jpg";
-
-								var random=Math.floor(Math.random()*myimages.length);
-								if (random == 0)
-								{
-									random = 1;
-								}
-								document.write('<img src="'+myimages[random]+'">');
-							}
-							randomImage();
-						</script>
-							<!--<img src="img/reviews/review2.jpg" id="reviewPics"/>
-							<img src="img/reviews/review3.jpg" id="reviewPics"/>
-							<img src="img/reviews/review1.jpg" id="reviewPics"/>-->
-						</div>
-					</div>
-				</div>
-            </div>
-            <div class="col-sm-4">
-                <img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic2.jpg" alt="">
-				<div id="bubbleText">
+            <div id="bubbleText">
                 <h2 id="bubbleH2">Tel-A-Friend, Country Motel</h2>
-                <p>Located within walking distance of downtown Vernon shops and parks, the Tel-A-Friend Country Motel brings you 50's charm and reasonable rates. 
-				Whether you are in Vernon for business or pleasure, the Tel-A-Friend Motel is a convenient and comfortable spot to stay. Skiing, biking, hiking, golfing, and wine tours, Tel-A-Friend is close to it all!<br>
-				
 
-				<h3>Pet Friendly</h3>
+                <p>Located within walking distance of downtown Vernon shops and parks, the Tel-A-Friend Country Motel
+                    brings you 50's charm and reasonable rates.
+                    Whether you are in Vernon for business or pleasure, the Tel-A-Friend Motel is a convenient and
+                    comfortable spot to stay. Skiing, biking, hiking, golfing, and wine tours, Tel-A-Friend is close to
+                    it all!</p><br>
 
-				We are a pet friendly motel, and there are plenty of places to walk your pooch right out the door. We are across from an excellent multi-use path that goes from Okanagan College to Okanagan Landing. There is also a dog park and a walking path right across the street. We are just blocks from Polson Park, Vernon's oldest and largest public park. Polson park offers a skate park, tennis courts, a playground, ducks and swans, lawn bowling, and outdoor exercise equipment. You can also check out the Okanagan Science Centre while you are there.<br><br>
-				</div>
-				
 
-				<!-- Google Maps Start -->
-				<a href="https://www.google.ca/maps/place/1501+32+St,+Vernon,+BC+V1T+5K4/@50.25286,-119.2733165,17z/data=!4m7!1m4!3m3!1s0x537dd8d8f57bfced:0x34ef1c35676eaa8c!2s1501+32+St,+Vernon,+BC+V1T+5K4!3b1!3m1!1s0x537dd8d8f57bfced:0x34ef1c35676eaa8c?hl=en">
-					<div id="googleMapContainer">
-						<div id="googleMap"></div>
-					</div>
-				</a><br>
-				<!-- Google Maps End -->
-				
+                <h3>Pet Friendly</h3>
+
+                <p>
+                    We are a pet friendly motel, and there are plenty of places to walk your pooch right out the door.
+                    We are across from an excellent multi-use path that goes from Okanagan College to Okanagan Landing.
+                    There is also a dog park and a walking path right across the street. We are just blocks from Polson
+                    Park, Vernon's oldest and largest public park. Polson park offers a skate park, tennis courts, a
+                    playground, ducks and swans, lawn bowling, and outdoor exercise equipment. You can also check out
+                    the Okanagan Science Centre while you are there.<br><br>
+                </p>
             </div>
-			<div class="col-sm-4">
-                <img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic3.jpg" alt="">
-				
-				
-            </div>
-            
+
+
+            <!-- Google Maps Start -->
+            <a href="https://www.google.ca/maps/place/1501+32+St,+Vernon,+BC+V1T+5K4/@50.25286,-119.2733165,17z/data=!4m7!1m4!3m3!1s0x537dd8d8f57bfced:0x34ef1c35676eaa8c!2s1501+32+St,+Vernon,+BC+V1T+5K4!3b1!3m1!1s0x537dd8d8f57bfced:0x34ef1c35676eaa8c?hl=en">
+                <div id="googleMapContainer">
+                    <div id="googleMap"></div>
+                </div>
+            </a><br>
+            <!-- Google Maps End -->
+
+        </div>
+        <div class="col-sm-4">
+            <a href="rooms_and_rates.html"><img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic3.jpg" alt="Rooms and Rates"></a>
+
+
         </div>
 
-<!-- Sidebar Start -->
+    </div>
 
-				
-				<!-- Booking Score Start
-					<div class="booking">
-					<script>
-					!function()
-						{
-							var e=Math.floor(1e5*Math.random()),t="bcom_rwidget_"+e;document.write('<div id="'+t+'"></div>');
-							
-							var i=document.createElement("script");i.type="text/javascript",i.async=!0,i.src="http://www.booking.com/review_widget/ca/tel-a-friend-motel.en.html?tmpl=review_widget/review_widget&wid="+t+"&wtype=box_small&hotel_id=311088&widget_language=en";
-							
-							var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(i,r)
-						}();
-					</script>	
-					<img src="http://www.bbb.org/mbc/images/2/ratings/cbbb-non-accred-a-plus.png" alt="BBB® Non-Accredited A+ Rating" title="BBB® Non-Accredited A+ Rating">
-					
-					</div>
-					Booking Score End -->
+    <!-- Sidebar Start -->
 
+
+    <!-- Booking Score Start
+        <div class="booking">
+        <script>
+        !function()
+            {
+                var e=Math.floor(1e5*Math.random()),t="bcom_rwidget_"+e;document.write('<div id="'+t+'"></div>');
+
+                var i=document.createElement("script");i.type="text/javascript",i.async=!0,i.src="http://www.booking.com/review_widget/ca/tel-a-friend-motel.en.html?tmpl=review_widget/review_widget&wid="+t+"&wtype=box_small&hotel_id=311088&widget_language=en";
+
+                var r=document.getElementsByTagName("script")[0];r.parentNode.insertBefore(i,r)
+            }();
+        </script>
+        <img src="http://www.bbb.org/mbc/images/2/ratings/cbbb-non-accred-a-plus.png" alt="BBB® Non-Accredited A+ Rating" title="BBB® Non-Accredited A+ Rating">
+
+        </div>
+        Booking Score End -->
 
 
 </div>
 
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="js/bootstrap.min.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
 </body>
-		<footer>
-            <p>Copyright &copy; Tel-A-Friend Motel - 1501 32nd Street, V1T 5K4 Vernon, Canada</p>
-        </footer>
+<footer>
+    <p>Copyright &copy; Tel-A-Friend Motel - 1501 32nd Street, V1T 5K4 Vernon, Canada</p>
+</footer>
 </html>
