@@ -65,7 +65,11 @@ footer
 	text-align: center;
 }
 
-
+@font-face{
+	font-family: "Thonburi-Bold";
+	src: url('Thonburi-Bold.ttf'),
+	url('Thonburi-Bold.eot'); /* IE */
+}
 
 .nav navbar-nav
 {
