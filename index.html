@@ -26,15 +26,16 @@
         var google = google || {};
 
         function initialize() {
-            new google.maps.LatLng(50.2528427, -119.2737897);
+			var lat_lng = new google.maps.LatLng(50.2528427, -119.2737897);
+
             var mapOptions = {
                 zoom: 15,
-                center: myLatlng
+                center: lat_lng
             };
             var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
 
             new google.maps.Marker({
-                position: myLatlng,
+                position: lat_lng,
                 map: map,
                 title: 'Tel-A-Friend Motel'
             });
