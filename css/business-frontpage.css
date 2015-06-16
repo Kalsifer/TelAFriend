@@ -66,9 +66,8 @@ footer
 }
 
 @font-face{
-	font-family: "Thonburi-Bold";
-	src: url('Thonburi-Bold.ttf'),
-	url('Thonburi-Bold.eot'); /* IE */
+	font-family: Bonzer;
+	src: url('../fonts/Bonzer.ttf');
 }
 
 .nav navbar-nav
@@ -79,12 +78,21 @@ footer
 .booking
 {
 	position: absolute;
-	height: 0px;
+	height: 0;
 	margin: 5px;
 	box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
 	
 }
 
+/* Tags */
+
+h1
+{
+	font-family:"Bonzer";
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 55px;
+}
 
 .col-sm-4
 {
@@ -195,8 +203,7 @@ p
 
 #bubbleH2
 {
-	margin-top: 40px;
-	font-weight: bold;
+
 }
 
 #hrSeparate
