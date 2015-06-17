@@ -65,7 +65,10 @@ footer
 	text-align: center;
 }
 
-
+@font-face{
+	font-family: Bonzer;
+	src: url('../fonts/Bonzer.ttf');
+}
 
 .nav navbar-nav
 {
@@ -75,13 +78,28 @@ footer
 .booking
 {
 	position: absolute;
-	height: 0px;
+	height: 0;
 	margin: 5px;
 	box-shadow: 10px 10px 25px rgba(0,0,0,0.5);
 	
 }
 
+/* Tags */
 
+h1
+{
+	font-family:"Bonzer";
+	margin-top: 40px;
+	font-weight: bold;
+	font-size: 55px;
+}
+
+/* Icons */
+
+.glyphicon-ok
+{
+	color: green;
+}
 .col-sm-4
 {
 	margin-bottom: 30px;
@@ -191,8 +209,7 @@ p
 
 #bubbleH2
 {
-	margin-top: 40px;
-	font-weight: bold;
+
 }
 
 #hrSeparate
@@ -263,7 +280,7 @@ p
  
  #contact input
  {
-	background-color: white;
+	/*background-color: white;*/
 	width: 100%;
 	margin: auto;
 	margin-bottom: 10px;
