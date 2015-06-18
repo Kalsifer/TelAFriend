@@ -105,7 +105,7 @@ h1
 	margin-bottom: 30px;
 }
 
-#bubbleText
+.expand-200percent
 {
 	width: 200%;
 }
@@ -127,7 +127,7 @@ textarea
 	border: 1px solid rgba(0,0,0,0.1);
 	padding: 15px;
 	width: 300px;
-	  box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
 
 #reservationButton
@@ -172,7 +172,7 @@ p
 
 #reviewPicsGroup img
 {
-	width: 100%;
+	width: 200%;
 }
 
 #reviewPicsGroup
@@ -181,9 +181,10 @@ p
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 	width: 100%;
 	margin-top: 40px;
+	height: 300px;
 }
 
-.reviewHeader, .contactHeader
+.reviewHeader, .contactHeader, .contactInformation
 {
 	padding: 10px;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
@@ -206,6 +207,10 @@ p
 	width: 100%;
 }
 
+.contactInformation
+{
+	background-color: white;
+}
 
 #bubbleH2
 {
@@ -265,7 +270,7 @@ p
  {
 	width: 100%;
 	padding: 10px;
-	font-size: 110%;
+	font-size: 100%;
 	text-align: left;
  }
  
@@ -278,7 +283,7 @@ p
 	width: 100%;
  }
  
- #contact input
+ #contact input, #contact textarea
  {
 	/*background-color: white;*/
 	width: 100%;
@@ -299,7 +304,60 @@ p
 	margin-bottom: 20px;
  }
 
- address
- {
+.about_container
+{
+	background-color: white;
+	width: 80%;
+	margin: auto;
+	padding: 5px 5px 5px 15px;
+}
 
- }
+.container2
+{
+	background-color: white;
+	margin-top: 50px;
+}
+
+#test_div {
+	height: 300px;
+	width: 300px;
+}
+
+.media
+{
+	margin-bottom: 25px;
+	background-color: #ffffff;
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+	padding: 10px;
+}
+
+.media-object
+{
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+.trip_icons
+{
+	list-style: none;
+	padding-left: 0px;
+}
+
+.trip_icons li
+{
+	float: left;
+	margin-right: 5px;
+
+}
+
+.panel-body
+{
+	padding-bottom: 0px;
+}
+
+.reviewHeader
+{
+	margin-bottom: -20px;
+	background-color: white;
+}

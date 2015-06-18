@@ -61,7 +61,7 @@
                 display: none;
             }
 
-            #bubbleText, #googleMap {
+            .expand-200percent, #googleMap {
                 width: 100%;
             }
 
@@ -146,58 +146,54 @@
                         Phone Number<br><input type="text" id="phone" placeholder=" 1-(555)-555-5555"/><br><br>
 
                         Comments?<br><textarea id="comments" placeholder=" I've got a question!"></textarea>
-
                         <input type="button" class="btn btn-info btn-lg" value="Submit" id="submitButton"/>
                     </div>
                 </form>
 
+                <h3 class="contactHeaderContainer" >
+                    <p class="contactInformation">Contact Information</p>
+                </h3>
 
-                <div class="panel panel-info bg-info"><div id="contactInfo">
-                    <div class="panel-heading"><h2>Contact Info</h2></div>
-
-                    <div class="panel-body"><p>Need information? Feel free to contact us any time during our business hours.</p>
-                    <address>
-                        <span class="glyphicon glyphicon-phone"></span> <strong>Phone:</strong> 1-(250)-558-1129<br>
-                        <span class="glyphicon glyphicon-envelope"></span> <strong>Address:</strong> 1501 32 St
-                        Vernon, BC
-                        V1T 5K4</li>
-                    </address>
-                    We look forward to hearing from you!</div>
-                </div></div>
-
-<br><br>
-                <div id="reviewHeaderContainer">
-                    <p id="reviewHeader">Customer Reviews</p>
-                </div>
-                <div id="reviewPicsGroup">
-                    <div id="reviewPicContainer">
-                        <script>
-                            function randomImage() {
-                                var myimages = [];
-
-                                myimages[1] = "img/reviews/review1.jpg";
-                                myimages[2] = "img/reviews/review2.jpg";
-                                myimages[3] = "img/reviews/review3.jpg";
-
-                                var random = Math.floor(Math.random() * myimages.length);
-                                if (random == 0) {
-                                    random = 1;
-                                }
-                                document.write('<img src="' + myimages[random] + '">');
-                            }
-                            randomImage();
-                        </script>
-                        <!--<img src="img/reviews/review2.jpg" id="reviewPics"/>
-                        <img src="img/reviews/review3.jpg" id="reviewPics"/>
-                        <img src="img/reviews/review1.jpg" id="reviewPics"/>-->
+                <div class="panel panel-info bg-info">
+                    <div id="contactInfo">
+                        <div class="panel-body"><p>Need information? Feel free to contact us any time during our business hours.</p>
+                            <address>
+                                <span class="glyphicon glyphicon-phone"></span> <strong>Phone:</strong> 1-(250)-558-1129<br>
+                                <span class="glyphicon glyphicon-envelope"></span> <strong>Address:</strong> 1501 32 St
+                                Vernon, BC
+                                V1T 5K4</li>
+                            </address>
+                            We look forward to hearing from you!
+                        </div>
                     </div>
                 </div>
+
+                <div class="panel panel-default">
+                    <div class="panel-heading">Facilities</div>
+                    <div class="panel-body">
+                        <table class="table">
+                            <tbody>
+                                <tr class="success">
+                                    <td><span class="glyphicon glyphicon-signal"></span> Free Wifi</td>
+                                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                                </tr>
+                                <tr class="success">
+                                    <td><span class="glyphicon glyphicon-road"></span> Free Parking</td>
+                                    <td><span class="glyphicon glyphicon-ok"></span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+<br><br>
+
             </div>
         </div>
         <div class="col-sm-4">
             <a href="about.html"><img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic2.jpg" alt="About Us"></a>
 
-            <div id="bubbleText">
+            <div id="bubbleText" class="expand-200percent">
                 <h1 id="bubbleH2">Tel-A-Friend, Country-Style Motel</h1>
 
                 <p>Located within walking distance of downtown Vernon shops and parks, the Tel-A-Friend Country Motel
@@ -207,34 +203,7 @@
                     it all!</p>
                 <p> Our rooms are clean, homey and comfortable and every room has it's own kitchenette. We also offer free Wifi for your browsing needs. Check out
                 the <a href="attractions.html">local attractions</a> page for information on food services and things to do.</p>
-
                 <br>
-
-
-
-            </div>
-            <div class="panel panel-default">
-               <div class="panel-heading">Facilities</div>
-                <div class="panel-body">
-                    <table class="table">
-                        <tbody>
-
-                        <tr class="success">
-                            <td><span class="glyphicon glyphicon-signal"></span> Free Wifi</td>
-
-                            <td><span class="glyphicon glyphicon-ok"></span></td>
-
-
-                        </tr>
-
-                        </tbody>
-
-
-                    </table>
-
-
-                </div>
-
             </div>
 
             <!-- Google Maps Start -->
@@ -245,13 +214,80 @@
             </a><br>
             <!-- Google Maps End -->
 
+            <div class="expand-200percent">
+                <p class="reviewHeader">Customer Reviews</p>
+            </div>
+
+            <div class="media expand-200percent">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/reviews/score1.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">"Favorite Motel"</h4>
+
+                    <ul class="trip_icons">
+                        <li><img src="img/reviews/icons/leisure.png" alt="leisure"></li>
+                        <li><img src="img/reviews/icons/family.png" alt="family"></li>
+                        <li><img src="img/reviews/icons/one_bedroom.png" alt="one_bedroom"></li>
+                        <li><img src="img/reviews/icons/one_night.png" alt="one_night"></li>
+                    </ul><br>
+
+                    We weren't expecting much when we booked the motel: the cost is low, the facility looks old, even the name is dated. But once we opened the room, we knew we found a gem. Everything is very clean and organized. The room smells like fresh laundry, and definitely shows the attention to details that have been put into it. It's quiet in the night, and just very comfortable. We will tell a friend about this motel.<br><br>
+                    Also, the location is very good. The pizza and ice cream across the street at Jim's Place are very delicious. Two blocks away there's a big convenience store where we bought fruits and energy drinks (for the road).
+                </div>
+            </div>
+
+            <div class="media expand-200percent">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/reviews/score2.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">"It feels like home with a funky eclectic charm."</h4>
+
+                    <ul class="trip_icons">
+                        <li><img src="img/reviews/icons/leisure.png" alt="leisure"></li>
+                        <li><img src="img/reviews/icons/group.png" alt="group"></li>
+                        <li><img src="img/reviews/icons/one_bedroom.png" alt="one_bedroom"></li>
+                        <li><img src="img/reviews/icons/one_night.png" alt="one_night"></li>
+                    </ul><br>
+
+                    I loved the attention to detail both in decor and cleanliness. It is run with care and ease. I have never opened a room to a motel and said "Oh boy" before, don't miss this gem!
+                </div>
+            </div>
+
+            <div class="media expand-200percent">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="img/reviews/score3.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">"Superb"</h4>
+
+                    <ul class="trip_icons">
+                        <li><img src="img/reviews/icons/business.png" alt="leisure"></li>
+                        <li><img src="img/reviews/icons/solo.png" alt="group"></li>
+                        <li><img src="img/reviews/icons/one_bedroom.png" alt="one_bedroom"></li>
+                        <li><img src="img/reviews/icons/one_night.png" alt="one_night"></li>
+                    </ul><br>
+
+                    What sets the Tel-A-Friend apart from the rest is the good location up on the hill and the lovely sunset.
+                    Ton of character! I had a good sound sleep. Quiet, cozy, comfortable and very clean. I'll be back....
+                </div>
+            </div>
+
+
+
         </div>
         <div class="col-sm-4">
             <a href="rooms_and_rates.html"><img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic3.jpg" alt="Rooms and Rates"></a>
 
 
         </div>
-
     </div>
 
     <!-- Sidebar Start -->
@@ -282,6 +318,9 @@
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
+
+<!-- Custom JavaScript -->
+<script src="js/script.js"></script>
 
 </body>
 <footer>
