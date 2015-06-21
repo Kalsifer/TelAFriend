@@ -70,7 +70,7 @@ footer
 	src: url('../fonts/Bonzer.ttf');
 }
 
-.nav navbar-nav
+.nav .navbar-nav
 {
 	text-align: center;
 }
@@ -234,7 +234,7 @@ p
 #rotator img
 { 
 	position: absolute;
-	border: 31x solid rgba(0,0,0,0.1);
+	border: 31px solid rgba(0,0,0,0.1);
 	width: 100%;
 }
 
