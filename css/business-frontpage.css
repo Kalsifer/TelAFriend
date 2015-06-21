@@ -361,3 +361,16 @@ p
 	margin-bottom: -20px;
 	background-color: white;
 }
+
+#amenities_container
+{
+	padding: 20px 20px 1px 20px;
+
+	border: 1px solid rgba(0,0,0,0.1);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+}
+
+.panel-body li
+{
+	list-style: none;
+}
