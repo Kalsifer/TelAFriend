@@ -50,7 +50,7 @@ padding-top: 50px;/* Required padding for .navbar-fixed-top. Remove if using .na
 	width: 70%;
 }
 
-#googleMap
+#google-map
 {
 	border: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
@@ -70,7 +70,7 @@ footer
 	src: url('../fonts/Bonzer.ttf');
 }
 
-.nav navbar-nav
+.nav .navbar-nav
 {
 	text-align: center;
 }
@@ -122,7 +122,7 @@ textarea
 	height: 100px;
 }
 
-#contactForm
+#contact-form
 {
 	border: 1px solid rgba(0,0,0,0.1);
 	padding: 15px;
@@ -130,7 +130,7 @@ textarea
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 }
 
-#reservationButton
+#reservation-button
 {
 	margin: auto;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
@@ -170,12 +170,12 @@ p
 	font-size: 120%;
 }
 
-#reviewPicsGroup img
+#review-pics-group img
 {
 	width: 200%;
 }
 
-#reviewPicsGroup
+#review-pics-group
 {
 	border: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
@@ -184,7 +184,7 @@ p
 	height: 300px;
 }
 
-.reviewHeader, .contactHeader, .contactInformation
+.review-header, .contact-header, .contact-information
 {
 	padding: 10px;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
@@ -193,37 +193,32 @@ p
 	text-align: center;
 }
 
-.reviewHeaderContainer
+.review-header-container
 {
 	margin-top: 20px;
 	width: 100%;
 	margin-bottom: -41px;
 }
 
-.contactHeaderContainer
+.contact-header-container
 {
 	margin-top: 20px;
 	margin-bottom: -21px;
 	width: 100%;
 }
 
-.contactInformation
+.contact-information
 {
 	background-color: white;
 }
 
-#bubbleH2
-{
-
-}
-
-#hrSeparate
+#hr-separate
 {
 	width: 50%;
 	border: 1px solid rgba(0,0,0,0.1);
 }
 
-#infoPic, #roomPic
+#info-pic, #room-pic
 {
 	border: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 1px 10px 10px rgba(0,0,0,0.1);
@@ -234,7 +229,7 @@ p
 #rotator img
 { 
 	position: absolute;
-	border: 31x solid rgba(0,0,0,0.1);
+	border: 31px solid rgba(0,0,0,0.1);
 	width: 100%;
 }
 
@@ -266,7 +261,7 @@ p
 
  }
  
- #contactInfo
+ #contact-info
  {
 	width: 100%;
 	padding: 10px;
@@ -356,7 +351,7 @@ p
 	padding-bottom: 0px;
 }
 
-.reviewHeader
+.review-header
 {
 	margin-bottom: -20px;
 	background-color: white;
@@ -373,4 +368,24 @@ p
 .panel-body li
 {
 	list-style: none;
+}
+
+section.rooms-rates
+{
+	border: 1px solid #573B30;
+	background-color: beige;
+	border-radius: 5px;
+	padding-left: 40px;
+	padding-right: 40px;
+
+	padding-bottom: 10px;
+}
+
+/* Image Gallery CSS */
+
+.slick-slide img {
+	border: 5px solid #FFF;
+	border-radius: 5px;
+	display: block;
+	width: 100%;
 }

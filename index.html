@@ -22,6 +22,11 @@
     <!-- Custom CSS -->
     <link href="css/business-frontpage.css" rel="stylesheet">
 
+    <!-- Slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- Add the new slick-theme.css if you want the default styling -->
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+
     <!-- Google Maps Script Start -->
     <script src="http://maps.googleapis.com/maps/api/js"></script>
     <script>
@@ -34,7 +39,7 @@
                 zoom: 15,
                 center: lat_lng
             };
-            var map = new google.maps.Map(document.getElementById('googleMap'), mapOptions);
+            var map = new google.maps.Map(document.getElementById('google-map'), mapOptions);
 
             new google.maps.Marker({
                 position: lat_lng,
@@ -59,11 +64,11 @@
 
     <style>
         @media (max-width: 770px) {
-            .bubblePicRemove {
+            .bubble-pic-remove {
                 display: none;
             }
 
-            .expand-200percent, #googleMap {
+            .expand-200percent, #google-map {
                 width: 100%;
             }
 
@@ -72,9 +77,10 @@
             }
         }
     </style>
+
 </head>
 
-<>
+<body>
 <!-- Navigation Start -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
@@ -136,9 +142,9 @@
                     </form>
                 </div>
 
-                <h3 class="contactHeaderContainer bg-success" >
-                    <p class="contactHeader">Contact Us</p>
-                </h3>
+                <div class="contact-header-container bg-success" >
+                    <h3 class="contact-header">Contact Us</h3>
+                </div>
                 <form id="contact" class="bg-success">
 
                     <div id="formContainer">
@@ -152,18 +158,18 @@
                     </div>
                 </form>
 
-                <h3 class="contactHeaderContainer" >
-                    <p class="contactInformation">Contact Information</p>
-                </h3>
+                <div class="contact-header-container" >
+                    <h3 class="contact-information">Contact Information</h3>
+                </div>
 
                 <div class="panel panel-info bg-info">
-                    <div id="contactInfo">
+                    <div id="contact-info">
                         <div class="panel-body"><p>Need information? Feel free to contact us any time during our business hours.</p>
                             <address>
                                 <span class="glyphicon glyphicon-phone"></span> <strong>Phone:</strong> 1-(250)-558-1129<br>
                                 <span class="glyphicon glyphicon-envelope"></span> <strong>Address:</strong> 1501 32 St
                                 Vernon, BC
-                                V1T 5K4</li>
+                                V1T 5K4
                             </address>
                             We look forward to hearing from you!
                         </div>
@@ -171,8 +177,8 @@
                 </div>
 
                 <!-- Amenities Accordion Start -->
-                <h3 class="contactHeaderContainer bg-success" >
-                    <p class="contactHeader">Amenities</p>
+                <h3 class="contact-header-container bg-success" >
+                    <p class="contact-header">Amenities</p>
                 </h3>
                 <div id="amenities_container" class="bg-success">
                     <div class="panel panel-default">
@@ -223,31 +229,62 @@
     </div>
 </div>
         <div class="col-sm-4">
-            <a href="about.html"><img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic2.jpg" alt="About Us"></a>
+            <a href="about.html"><img class="img-circle img-responsive img-center bubble-pic-remove bubbles" src="img/bubblePic2.jpg" alt="About Us"></a>
 
-            <div id="bubbleText" class="expand-200percent">
-                <h1 id="bubbleH2">Tel-A-Friend, Country-Style Motel</h1>
+            <div class="expand-200percent">
+                <section class="info">
+                <h1>Tel-A-Friend, Country-Style Motel</h1>
 
                 <p>Located within walking distance of downtown Vernon shops and parks, the Tel-A-Friend Country Motel
-                    brings you 50's charm and reasonable rates.
+                    brings you 50' eclectic charm and reasonable rates.
                     Whether you are in Vernon for business or pleasure, the Tel-A-Friend Motel is a convenient and
                     comfortable spot to stay. Skiing, biking, hiking, golfing, and wine tours, Tel-A-Friend is close to
                     it all!</p>
                 <p> Our rooms are clean, homey and comfortable and every room has it's own kitchenette. We also offer free Wifi for your browsing needs. Check out
                 the <a href="attractions.html">local attractions</a> page for information on food services and things to do.</p>
                 <br>
-            </div>
+                    </section>
+                <section class="rooms-rates">
+                    <h1>Rooms and Rates</h1>
+                    <p>Our rooms are filled with eclectic charm. Each room has a kitchenette, coffeemaker, sofa, desk and gas furnace. </p>
+                    <div class="slider autoplay fade2">
+                     <!--   <div><h3>1</h3></div>
+                        <div><h3>2</h3></div>
+                        <div><h3>3</h3></div>
+                        <div><h3>4</h3></div>
+                        <div><h3>5</h3></div>
+                        <div><h3>6</h3></div>-->
 
+                        <div><div class="image"><img src="img/room-pictures/room1.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room2.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room3.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room4.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room5.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room6.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room7.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room8.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room9.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room10.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room11.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room12.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room13.jpg"></div></div>
+                        <div><div class="image"><img src="img/room-pictures/room14.jpg"></div></div>
+                    </div>
+
+                </section>
+            </div>
+<br>
+            <br>
             <!-- Google Maps Start -->
             <a href="https://www.google.ca/maps/place/1501+32+St,+Vernon,+BC+V1T+5K4/@50.25286,-119.2733165,17z/data=!4m7!1m4!3m3!1s0x537dd8d8f57bfced:0x34ef1c35676eaa8c!2s1501+32+St,+Vernon,+BC+V1T+5K4!3b1!3m1!1s0x537dd8d8f57bfced:0x34ef1c35676eaa8c?hl=en">
                 <div id="googleMapContainer">
-                    <div id="googleMap"></div>
+                    <div id="google-map"></div>
                 </div>
             </a><br>
             <!-- Google Maps End -->
 
             <div class="expand-200percent">
-                <p class="reviewHeader">Customer Reviews</p>
+                <p class="review-header">Customer Reviews</p>
             </div>
 
             <div class="media expand-200percent">
@@ -316,7 +353,7 @@
 
         </div>
         <div class="col-sm-4">
-            <a href="rooms_and_rates.html"><img class="img-circle img-responsive img-center bubblePicRemove bubbles" src="img/bubblePic3.jpg" alt="Rooms and Rates"></a>
+            <a href="rooms_and_rates.html"><img class="img-circle img-responsive img-center bubble-pic-remove bubbles" src="img/bubblePic3.jpg" alt="Rooms and Rates"></a>
 
 
         </div>
@@ -347,12 +384,15 @@
 
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
+<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
-<!-- Custom JavaScript -->
-<script src="js/script.js"></script>
+<!-- Slick -->
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="js/slicksettings.js"></script>
+
 
 </body>
 <footer>
