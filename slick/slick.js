@@ -66,7 +66,7 @@
                 initialSlide: 0,
                 lazyLoad: 'ondemand',
                 mobileFirst: false,
-                pauseOnHover: true,
+                pauseOnHover: false,
                 pauseOnDotsHover: false,
                 respondTo: 'window',
                 responsive: null,
@@ -707,7 +707,7 @@
 
         if (_.options.dots === true && _.options.pauseOnDotsHover === true && _.options.autoplay === true) {
             $('li', _.$dots)
-                .off('mouseenter.slick', _.setPaused.bind(_, true))
+                //.off('mouseenter.slick', _.setPaused.bind(_, true))
                 .off('mouseleave.slick', _.setPaused.bind(_, false));
         }
 
@@ -727,7 +727,7 @@
             $(document).off(_.visibilityChange, _.visibility);
         }
 
-        _.$list.off('mouseenter.slick', _.setPaused.bind(_, true));
+        _.$list//.off('mouseenter.slick', _.setPaused.bind(_, true));
         _.$list.off('mouseleave.slick', _.setPaused.bind(_, false));
 
         if (_.options.accessibility === true) {
