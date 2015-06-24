@@ -30,38 +30,41 @@ padding-top: 50px;/* Required padding for .navbar-fixed-top. Remove if using .na
 .tagline {
     text-shadow: 0 0 10px #000;
     color: #fff;
-}
+	margin-top: 210px;
 
-.img-circle {
-	margin: 25px;
-	width: 20%;
 }
 
 .row
 {
-	margin-top: -200px;
-	width: 100%;
+	margin-top: -210px;
+
 
 }
 
+.col-xs-4 {
+	padding-bottom: 20px;
+
+}
+
+.bubbles.img-responsive
+{
+	margin: 0 auto;
+
+
+
+
+}
 .bubbles
 {
 	
 	/*border: 1px solid rgba(0,0,0,0.7);*/
 	border: 0px solid white;
 	box-shadow: 0px 0px 25px rgba(0,0,0,0.5);
-	/*float: left;*/
-	display: inline-block;
-	position: relative;
-
-}
-
-.bubble-center
-{
-
 
 
 }
+
+
 
 #google-map
 {
@@ -315,7 +318,7 @@ p
 	background-color: white;
 	width: 80%;
 	margin: auto;
-	padding: 5px 5px 5px 15px;
+	padding: 5px 5px 5px 5px;
 }
 
 .container2
