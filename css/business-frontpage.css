@@ -148,6 +148,7 @@ textarea
 	padding: 15px;
 	width: 300px;
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+	width: 100%
 }
 
 #reservation-button
@@ -282,14 +283,18 @@ p
 	font-size: 100%;
 	text-align: left;
  }
- 
+
+ .contact-header-container{
+
+	 width: 100%;
+ }
  
  #contact
  {
 	border: 1px solid rgba(0,0,0,0.1);
 	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 	padding: 5px;
-	width: 50%;
+	width: 100%;
  }
  
  #contact input, #contact textarea
@@ -386,13 +391,13 @@ p
 
 section.rooms-rates
 {
-	border: 1px solid #573B30;
-	background-color: beige;
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
 	border-radius: 5px;
 	padding-left: 40px;
 	padding-right: 40px;
-
 	padding-bottom: 10px;
+	margin-bottom: 20px;
 }
 
 /* Image Gallery CSS */
@@ -404,8 +409,11 @@ section.rooms-rates
 	width: 100%;
 }
 
-.bubble-container
+.rooms div
 {
-
-
+	border: 1px solid rgba(0,0,0,0.2);
+	box-shadow: 1px 1px 10px rgba(0,0,0,0.1);
+	margin: 10px;
+	width: 30%;
+	background-color: #67b168;
 }
