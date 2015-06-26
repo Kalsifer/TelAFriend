@@ -13,14 +13,25 @@ padding-top: 50px;/* Required padding for .navbar-fixed-top. Remove if using .na
 /* Header Image Background - Change the URL below to your image path (example: ../images/background.jpg) */
 
 .business-header {
-    height: 400px;
-    background: url("../img/bigBanner2.jpg") center center no-repeat scroll;
+    height: 650px;
+	width: 100%;
+    background: url("../img/sign-background-blur.jpg") center center no-repeat scroll;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
 	border-bottom: 1px solid gray;
 	box-shadow: 0px 10px 25px rgba(0,0,0,0.2);
+}
+
+
+/* Animation */
+
+img.sign
+{
+	margin-left: 80%;
+	margin-right: auto;
+	display: block;
 }
 
 /* Customize the text color and shadow color and to optimize text legibility. */
